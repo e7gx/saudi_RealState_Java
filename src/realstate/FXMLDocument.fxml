@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="623.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="realstate.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Label contentDisplay="CENTER" graphicTextGap="478.0" layoutX="-53.0" layoutY="-1.0" prefHeight="84.0" prefWidth="541.0" style="-fx-background-color: #5e3aa1;" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="488.0" prefHeight="572.0" prefWidth="253.0" style="-fx-background-color: #5e3aa1;" />
+      <TableView fx:id="realEstateTable" layoutY="81.0" prefHeight="491.0" prefWidth="490.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="75.0" text="رقم العقار" />
+          <TableColumn fx:id="itemColumn" minWidth="20.0" prefWidth="125.0" text="اسم العقار" />
+            <TableColumn fx:id="priceColumn" prefWidth="87.77777099609375" text="سعر العقار" />
+            <TableColumn fx:id="landAreaColumn" prefWidth="100.0" text="مساحة العقار" />
+            <TableColumn fx:id="dateColumn" minWidth="15.0" prefWidth="100.00003051757812" text="تاريخ العقار" />
+        </columns>
+      </TableView>
+      <Button fx:id="addButton" blendMode="GREEN" contentDisplay="CENTER" layoutX="508.0" layoutY="389.0" mnemonicParsing="false" onAction="#handleAddButton" prefHeight="13.0" prefWidth="129.0" text="أضافة العقار">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="searchButton" blendMode="HARD_LIGHT" layoutX="537.0" layoutY="521.0" mnemonicParsing="false" onAction="#handleSearchButton" prefHeight="27.0" prefWidth="63.0" text="بحث">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <TextField fx:id="idTextField" layoutX="498.0" layoutY="187.0" />
+      <TextField fx:id="itemTextField" layoutX="498.0" layoutY="227.0" />
+      <TextField fx:id="priceTextField" layoutX="498.0" layoutY="265.0" />
+      <TextField fx:id="landAreaTextField" layoutX="498.0" layoutY="302.0" />
+      <TextField fx:id="searchTextField" blendMode="SCREEN" layoutX="502.0" layoutY="484.0" prefHeight="25.0" prefWidth="143.0" />
+      <Text fx:id="IdLabel" layoutX="664.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="رقم العقار">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text fx:id="NameLabel" layoutX="659.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="اسم العقار">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="PriceLabel" layoutX="657.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="سعر العقار">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="LandAreaLabel" layoutX="655.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="مساحة العقار" wrappingWidth="75.111083984375">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text fx:id="DateLabel" layoutX="659.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="تاريخ العقار">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <DatePicker fx:id="dateDatePicker" layoutX="499.0" layoutY="343.0" prefHeight="19.0" prefWidth="150.0" />
+      <Text fill="WHITE" layoutX="650.0" layoutY="499.0" strokeType="OUTSIDE" strokeWidth="0.0" text="البحث عن العقار" wrappingWidth="89.3333740234375">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <Button fx:id="deleteButton" blendMode="RED" layoutX="508.0" layoutY="427.0" mnemonicParsing="false" onAction="#handleDeleteButton" prefHeight="27.0" prefWidth="129.0" text="حذف العقار">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Text fx:id="TitleLabel" fill="WHITE" layoutX="140.0" layoutY="47.0" stroke="#3c2b80" strokeType="OUTSIDE" strokeWidth="3.5" text="برنامج العقار" wrappingWidth="265.5000000000001">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <ImageView cache="true" fitHeight="152.0" fitWidth="172.0" focusTraversable="true" layoutX="516.0" layoutY="18.0" nodeOrientation="INHERIT">
+         <image>
+            <Image url="/icon/Logo2.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
+

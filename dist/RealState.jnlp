@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="RealState.jnlp">
+  <information>
+    <title>RealState</title>
+    <vendor>imalm</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="RealState.jar" size="65107" download="eager" />
+    <jar href="lib\mysql-connector-j-8.0.33.jar" size="2481560" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="RealState" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="realstate.RealState"  name="RealState" />
+  <update check="always"/>
+</jnlp>
